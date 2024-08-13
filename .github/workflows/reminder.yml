@@ -1,9 +1,10 @@
 name: Daily Review Reminder
 
+# UTC 기준이므로 한국시간 +9 
 on:
   workflow_dispatch: # manual trigger
   schedule: # cron trigger
-    - cron:  '15 19 * * 1-5'
+    - cron:  '15 10 * * 1-5'
 
 jobs:
   reminder:
