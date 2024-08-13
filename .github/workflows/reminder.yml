@@ -14,5 +14,10 @@ jobs:
       uses: tsickert/discord-webhook@v6.0.0
       with:
         webhook-url: ${{ secrets.WEBHOOK_URL }}
-        raw_data: ./component.json
+        raw-data: ./component.json
         username: 김민규
+        embed-footer-text: "footer"
+        embed-author-name: "Kyeu"
+        embed-description: "description"
+        embed-title: "title"
+        embed-color: 3
