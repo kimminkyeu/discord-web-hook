@@ -4,8 +4,11 @@
 # https://github.com/marketplace/actions/discord-webhook-action
 # -------------------------------------------------------------------
 name: Discord Reminder
+
+
 on:
-  schedule:
+  workflow_dispatch: # manual trigger
+  schedule: # cron trigger
     - cron:  '0 12 * * *'
 
 jobs:
