@@ -14,4 +14,5 @@ jobs:
       uses: tsickert/discord-webhook@v6.0.0
       with:
         webhook-url: ${{ secrets.WEBHOOK_URL }}
-        raw-data: ./component.json
+        filename: ./component.json
+        username: 김민규
