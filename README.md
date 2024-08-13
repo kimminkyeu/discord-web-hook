@@ -5,5 +5,7 @@
 회고 리마인더를 보냅니다.
 특정 시간까지 회고가 작성되지 않으면, 회고 알림을 "이름"과 함께 알립니다.
 
-참고: https://github.com/marketplace/actions/discord-webhook-action
+참고: 
+https://github.com/marketplace/actions/discord-webhook-action
+https://discord.com/developers/docs/interactions/message-components
 1. WEBHOOK_URL 시크릿 설정 (url 뒤에 /github 붙여야 한다)
