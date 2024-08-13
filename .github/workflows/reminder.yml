@@ -3,7 +3,7 @@ name: Daily Review Reminder
 on:
   workflow_dispatch: # manual trigger
   schedule: # cron trigger
-    - cron:  '0 20 * * *'
+    - cron:  '15 19 * * 1-5'
 
 jobs:
   reminder:
@@ -15,11 +15,10 @@ jobs:
       with:
         webhook: ${{ secrets.WEBHOOK_URL }}
         nodetail: true
-        content: "Hey <@316911818725392384>"
-        title: "데일리 회고를 통해 하후를 마무리 해요 😎"
+        content: "<@KBE2_김민규> <@KBE2_임건우> <@KBE2_김영래> <@KBE2_김민주> "
+        title: "데일리 회고 잊지 말기 😎"
         description: |
-          성장의 길은 회고로부터 시작됩니다.
-          오늘 하루동안 잘한 점과 부족했던 점을 정리해보세요.
+          오늘 하루동안 잘한 점과 부족했던 점을 정리해봐요
           [노션 E2E 회고 링크](https://www.notion.so/91e3e82c27f84834827238824821500c?v=cd52f89ed2f842268d946647cae5211e&pvs=4)
         color: 0xff91a4
         image: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD9hgqgq58uG2LbI5wkjaqPl_LntZ9k8o2Pg&s
