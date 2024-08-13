@@ -1,0 +1,19 @@
+# -------------------------------------------------------------------
+# https://mattstauffer.com/blog/how-to-trigger-a-webhook-on-a-schedule-using-github-actions/
+# https://docs.github.com/ko/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows
+# https://github.com/marketplace/actions/discord-webhook-action
+# -------------------------------------------------------------------
+name: Discord Reminder
+on:
+  schedule:
+    - cron:  '0 12 * * *'
+
+jobs:
+  message:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Discord Webhook Action
+      uses: tsickert/discord-webhook@v5.3.0
+      with:
+        webhook-url: ${{ secrets.WEBHOOK_URL }}
+        content: "Test"
