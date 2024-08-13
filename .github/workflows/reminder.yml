@@ -1,14 +1,9 @@
-# -------------------------------------------------------------------
-# https://mattstauffer.com/blog/how-to-trigger-a-webhook-on-a-schedule-using-github-actions/
-# https://docs.github.com/ko/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows
-# https://github.com/marketplace/actions/discord-webhook-action
-# -------------------------------------------------------------------
-name: Discord Reminder
+name: Daily Review Reminder
 
 on:
   workflow_dispatch: # manual trigger
   schedule: # cron trigger
-    - cron:  '0 12 * * *'
+    - cron:  '0 20 * * *'
 
 jobs:
   reminder:
@@ -19,5 +14,4 @@ jobs:
       uses: tsickert/discord-webhook@v6.0.0
       with:
         webhook-url: ${{ secrets.WEBHOOK_URL }}
-        username: minkyeu
         raw-data: ./message.json
