@@ -1,17 +1,29 @@
 {
-    "content": "This is a message with components",
-    "components": [
-        {
-            "type": 1,
-            "components": [
-                {
-                    "type": 2,
-                    "label": "Click me!",
-                    "style": 1,
-                    "custom_id": "click_one"
-                }
-            ]
-
-        }
-    ]
+    "version": 1,
+    "type": 3,
+    "message": {
+        "type": 0,
+        "mentions": [],
+        "mention_roles": [],
+        "mention_everyone": false,
+        "flags": 0,
+        "embeds": [],
+        "content": "데일리 회고 리마인드",
+        "components": [
+            {
+                "type": 1,
+                "components": [
+                    {
+                        "type": 2,
+                        "label": "Click me!",
+                        "style": 1,
+                        "custom_id": "click_one"
+                    }
+                ]
+            }
+        ],
+        "author": {
+            "username": "KBE2_김민규",
+        },
+    }
 }
