@@ -9,9 +9,15 @@ jobs:
   reminder:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
     - name: Discord Webhook Action
-      uses: tsickert/discord-webhook@v6.0.0
+      uses: sarisia/actions-status-discord@v1.14.7
+      if: always()
       with:
-        webhook-url: ${{ secrets.WEBHOOK_URL }}
-        raw-data: ./component.json
+        webhook: ${{ secrets.WEBHOOK_URL }}
+        nodetail: true
+        content: "Hey <@316911818725392384>"
+        title: "데일리 회고를 통해 하후를 마무리 해요😎"
+        description: |
+        color: 0xff91a4?pvs=4"
+        username: 데일리 회고 리마인드
+        avatar_url: https://cdn.vectorstock.com/i/500p/02/75/smiling-emoticon-with-sunglasses-vector-7920275.jpg
