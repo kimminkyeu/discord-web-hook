@@ -21,6 +21,7 @@ jobs:
           성장의 길은 회고로부터 시작됩니다.
           오늘 하루동안 잘한 점과 부족했던 점을 정리해보세요.
           [노션 E2E 회고 링크](https://www.notion.so/91e3e82c27f84834827238824821500c?v=cd52f89ed2f842268d946647cae5211e&pvs=4)
-        color: 0xff91a4?pvs=4"
+        color: 0xff91a4
+        image: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD9hgqgq58uG2LbI5wkjaqPl_LntZ9k8o2Pg&s
         username: 데일리 회고 리마인드
         avatar_url: https://cdn.vectorstock.com/i/500p/02/75/smiling-emoticon-with-sunglasses-vector-7920275.jpg
