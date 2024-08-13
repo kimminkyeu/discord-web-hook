@@ -15,7 +15,7 @@ jobs:
       with:
         webhook: ${{ secrets.WEBHOOK_URL }}
         nodetail: true
-        content: "<@KBE2_김민규> <@KBE2_임건우> <@KBE2_김영래> <@KBE2_김민주> "
+        content: ""
         title: "데일리 회고 잊지 말기 😎"
         description: |
           오늘 하루동안 잘한 점과 부족했던 점을 정리해봐요
