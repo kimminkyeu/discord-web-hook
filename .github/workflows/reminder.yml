@@ -15,3 +15,9 @@ jobs:
       with:
         webhook-url: ${{ secrets.WEBHOOK_URL }}
         raw-data: ./component.json
+        username: Minkyeu Kim
+        embed-footer-text: "footer"
+        embed-author-name: "Kyeu"
+        embed-description: "description"
+        embed-title: "title"
+        embed-color: 3
