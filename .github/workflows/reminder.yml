@@ -9,9 +9,9 @@ jobs:
   reminder:
     runs-on: ubuntu-latest
     steps:
-    - name: Send a message with a component in multiple rows
-      uses: MineBartekSA/discord-webhook@v2
+    - uses: actions/checkout@v2
+    - name: Discord Webhook Action
+      uses: tsickert/discord-webhook@v6.0.0
       with:
-        webhook: ${{ secrets.APPLICATION_WEBHOOK }}
-        attachment: |
-          file: ./component.json
+        webhook-url: ${{ secrets.WEBHOOK_URL }}
+        raw-data: ./component.json
