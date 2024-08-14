@@ -16,7 +16,7 @@ jobs:
       with:
         webhook: ${{ secrets.WEBHOOK_URL }}
         nodetail: true
-        content: "평일 오후 7시 15분 알림 입니다"
+        content: "평일 오후 7시 15분 알림 - <@${{ secrets.TEAM_MEMBER_1 }}> <@${{ secrets.TEAM_MEMBER_2 }}> <@${{ secrets.TEAM_MEMBER_3 }}> <@${{ secrets.TEAM_MEMBER_4 }}>"
         title: "데일리 회고 리마인드 😎"
         description: |
           오늘 하루동안 잘한 점과 부족했던 점을 정리해봐요
