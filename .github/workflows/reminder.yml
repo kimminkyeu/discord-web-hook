@@ -4,7 +4,7 @@ name: Daily Review Reminder
 on:
   workflow_dispatch: # manual trigger
   schedule: # cron trigger
-    - cron:  '15 10 * * 1-5'
+    - cron:  '15 9 * * 1-5'
 
 jobs:
   reminder:
